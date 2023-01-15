@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="data.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        .fading{
+    color: orange;
+}
+.fadings{
+    color: orange;
+}
+.oranges{
+    height: 20px;
+    background-color: azure;
+}
+.top{
+    background-color: rgb(218, 221, 223);
+    box-shadow: 1px 2px 1px gainsboro;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    line-height: 0px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+h2{
+    font-size: 40px;
+    color: orange;
+}
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    line-height: 0px;
+    align-items: center;
+    margin: 5px;
+}
+#graphTitle{
+    display: flex;
+    justify-content: center;
+    line-height: 0px;
+    align-items: center;
+}
+button{
+    width: 120px;
+    height: 30px;
+    background-color: orange;
+    color: rgb(6, 2, 2);
+    margin: 5px;
+    outline: none;
+    border-color: rgb(141, 108, 46);
+    border-radius: 10px;
+}
+#graphContainer{
+     
+      box-shadow: 1px 0px 2px gainsboro;
+      height: 80vh;
+}
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h2>World Country Data</h2>
+        <p id="subheading"></p>
+    </div>
+
+    <div id="lowerdiv" >
+        <div id="buttonContainer">
+            <button id="populationButton" onclick="buttonOneClicked()">Population</button>
+            <button id="languageButton" onclick="buttonTwoClicked()">Language</button>
+        </div>
+        <p id="graphTitle">10 most populated countries in world</p>
+        <div id="graphContainer">
+            <div id="graph"></div>
+        </div>
+    </div>
+</body>
+</html>
